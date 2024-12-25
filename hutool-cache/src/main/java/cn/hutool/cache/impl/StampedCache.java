@@ -12,7 +12,9 @@ import java.util.concurrent.locks.StampedLock;
  * @param <V> 值类型
  * @author looly
  * @since 5.7.15
+ * @deprecated Map使用StampedLock可能造成数据不一致甚至Map循环调用，此缓存废弃
  */
+@Deprecated
 public abstract class StampedCache<K, V> extends AbstractCache<K, V> {
 	private static final long serialVersionUID = 1L;
 
