@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -88,7 +89,7 @@ public class GifCaptchaUtilTest {
 		Object result = invokePrivateMethod("graphicsImage", new Class[]{char[].class, Color[].class, char[].class, int.class}, new Object[]{chars, colors, chars, 0});
 
 		assertNotNull(result, "生成的图片不应该为 null");
-		assertTrue(result instanceof java.awt.image.BufferedImage, "返回的结果应该是 BufferedImage 类型");
+		assertInstanceOf(BufferedImage.class, result, "返回的结果应该是 BufferedImage 类型");
 	}
 
 	// 测试 getRandomColor() 方法
@@ -98,7 +99,7 @@ public class GifCaptchaUtilTest {
 		Object result = invokePrivateMethod("getRandomColor", new Class[]{int.class, int.class}, new Object[]{0, 255});
 
 		assertNotNull(result, "生成的颜色不应该为 null");
-		assertTrue(result instanceof Color, "返回的结果应该是 Color 类型");
+		assertInstanceOf(Color.class, result, "返回的结果应该是 Color 类型");
 
 		Color color = (Color) result;
 		assertTrue(color.getRed() >= 0 && color.getRed() <= 255, "颜色的红色分量应该在 0 到 255 之间");

@@ -1,9 +1,6 @@
 package cn.hutool.captcha;
-import cn.hutool.captcha.ShearCaptcha;
+
 import cn.hutool.captcha.generator.RandomGenerator;
-import cn.hutool.core.img.GraphicsUtil;
-import cn.hutool.core.img.ImgUtil;
-import cn.hutool.core.util.RandomUtil;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -35,7 +32,7 @@ public class ShearCaptchaTest {
 		String code = "ABCD";
 		Image image = captcha.createImage(code);
 		assertNotNull(image, "验证码图片不应该为 null");
-		assertTrue(image instanceof BufferedImage, "生成的图片应该是 BufferedImage 类型");
+		assertInstanceOf(BufferedImage.class, image, "生成的图片应该是 BufferedImage 类型");
 
 		// 可选：进一步测试图像的内容
 		BufferedImage bufferedImage = (BufferedImage) image;
