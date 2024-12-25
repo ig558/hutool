@@ -2,6 +2,26 @@
 # 🚀Changelog
 
 -------------------------------------------------------------------------------------------------------------
+# 5.8.35(2024-12-25)
+
+### 🐣新特性
+* 【poi    】      优化ExcelWriter中使用比较器writer的方法，只对第一条数据进行排序（pr#3807@Github）
+* 【extra  】      优化Ftp.download，返回false抛出异常（issue#3805@Github）
+* 【core   】      优化MAC地址正则（issue#IB95X4@Gitee）
+* 【json   】      JSON的getByPath方法新增更为通用的指定出参类型重载（pr#3814@Github）
+* 【core   】      DateUtil.parseUTC方法标记废弃，改名为parseISO8601（issue#IBB6I5@Gitee）
+* 【core   】      添加EnumUtil#getBy(Class, Func1, Object)方法（pr#1283@Gitee）
+* 【db     】      添加Entity.addCondition方法（issue#IBCDL2@Gitee）
+* 【poi    】      添加StopReadException，定义sax读取时用户可手动终止（issue#3820@Github）
+
+### 🐞Bug修复
+* 【crypto 】      修复JWTSignerUtil.createSigner中algorithmId未转换问题（issue#3806@Github）
+* 【core   】      修复DateUtil.rangeContains未重置问题（issue#IB8OFS@Gitee）
+* 【cache  】      修复StampedCache类get方法并发问题（issue#IBCIQG@Gitee）
+* 【cache  】      修复FIFOCache类使用StampedCache导致并发读的并发问题（issue#IBCIQG@Gitee）
+* 【cache  】      废弃StampedCache，可能造成Map循环调用导致死锁（issue#IBDGBZ@Gitee）
+
+-------------------------------------------------------------------------------------------------------------
 # 5.8.34(2024-11-25)
 
 ### 🐣新特性

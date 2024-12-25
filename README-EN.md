@@ -36,6 +36,9 @@
 	<a target="_blank" href='https://github.com/dromara/hutool'>
 		<img src="https://img.shields.io/github/stars/dromara/hutool.svg?style=social" alt="github star"/>
 	</a>
+	<a target="_blank" href='https://gitcode.com/dromara/hutool'>
+		<img src="https://gitcode.com/dromara/hutool/star/badge.svg" alt="gitcode star"/>
+	</a>
 </p>
 
 <br/>
@@ -150,18 +153,18 @@ We provide the T-Shirt and Sweater with Hutool Logo, please visit the shop：
 <dependency>
     <groupId>cn.hutool</groupId>
     <artifactId>hutool-all</artifactId>
-    <version>5.8.34</version>
+    <version>5.8.35</version>
 </dependency>
 ```
 
 ### 🍐Gradle
 ```
-implementation 'cn.hutool:hutool-all:5.8.34'
+implementation 'cn.hutool:hutool-all:5.8.35'
 ```
 
 ## 📥Download
 
-- [Maven Repo](https://repo1.maven.org/maven2/cn/hutool/hutool-all/5.8.34/)
+- [Maven Repo](https://repo1.maven.org/maven2/cn/hutool/hutool-all/5.8.35/)
 
 > 🔔️note:
 > Hutool 5.x supports JDK8+ and is not tested on Android platforms, and cannot guarantee that all tool classes or tool methods are available.
@@ -199,6 +202,7 @@ When submitting feedback, please indicate which JDK version, Hutool version, and
 
 - [Gitee issue](https://gitee.com/dromara/hutool/issues)
 - [Github issue](https://github.com/dromara/hutool/issues)
+- [Gitcode issue](https://gitcode.com/dromara/hutool/issues)
 
 ### 🧬Principles of PR(pull request)
 

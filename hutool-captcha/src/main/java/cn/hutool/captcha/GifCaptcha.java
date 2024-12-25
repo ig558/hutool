@@ -113,9 +113,7 @@ public class GifCaptcha extends AbstractCaptcha {
 	 * @return this
 	 */
 	public GifCaptcha setRepeat(int repeat) {
-		if (repeat >= 0) {
-			this.repeat = repeat;
-		}
+		this.repeat = Math.max(repeat, 0);
 		return this;
 	}
 

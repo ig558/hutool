@@ -36,6 +36,9 @@
 	<a target="_blank" href='https://github.com/dromara/hutool'>
 		<img src="https://img.shields.io/github/stars/dromara/hutool.svg?style=social" alt="github star"/>
 	</a>
+	<a target="_blank" href='https://gitcode.com/dromara/hutool'>
+		<img src="https://gitcode.com/dromara/hutool/star/badge.svg" alt="gitcode star"/>
+	</a>
 </p>
 
 <br/>
@@ -143,20 +146,20 @@ Hutool = Hu + tool，是原公司项目底层代码剥离后的开源库，“Hu
 <dependency>
     <groupId>cn.hutool</groupId>
     <artifactId>hutool-all</artifactId>
-    <version>5.8.34</version>
+    <version>5.8.35</version>
 </dependency>
 ```
 
 ### 🍐Gradle
 ```
-implementation 'cn.hutool:hutool-all:5.8.34'
+implementation 'cn.hutool:hutool-all:5.8.35'
 ```
 
 ### 📥下载jar
 
 点击以下链接，下载`hutool-all-X.X.X.jar`即可：
 
-- [Maven中央库](https://repo1.maven.org/maven2/cn/hutool/hutool-all/5.8.34/)
+- [Maven中央库](https://repo1.maven.org/maven2/cn/hutool/hutool-all/5.8.35/)
 
 > 🔔️注意
 > Hutool 5.x支持JDK8+，对Android平台没有测试，不能保证所有工具类或工具方法可用。
@@ -191,15 +194,16 @@ Hutool的源码分为两个分支，功能如下：
 
 - [Gitee issue](https://gitee.com/dromara/hutool/issues)
 - [Github issue](https://github.com/dromara/hutool/issues)
+- [Gitcode issue](https://gitcode.com/dromara/hutool/issues)
 
 
 ### 🧬贡献代码的步骤
 
-1. 在Gitee或者Github上fork项目到自己的repo
+1. 在Gitee或者Github/Gitcode上fork项目到自己的repo
 2. 把fork过去的项目也就是你的项目clone到你的本地
 3. 修改代码（记得一定要修改v5-dev分支）
 4. commit后push到自己的库（v5-dev分支）
-5. 登录Gitee或Github在你首页可以看到一个 pull request 按钮，点击它，填写一些说明信息，然后提交即可。
+5. 登录Gitee或Github/Gitcode在你首页可以看到一个 pull request 按钮，点击它，填写一些说明信息，然后提交即可。
 6. 等待维护者合并
 
 ### 📐PR遵照的原则
